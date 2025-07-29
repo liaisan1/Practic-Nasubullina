@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Заявка на регистрацию</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title">Заявка на регистрацию для мероприятия</h2>
+        <button class="modal-close" aria-label="Закрыть модальное окно">
+          <img src="close-icon.svg" alt="Закрыть" class="close-icon" />
+           </button>
+         </div>
+
+         <form class="modal-form">
+          <div class="form-field">
+            <label class="form-label">Тип мероприятия<span class="form-required">*</span></label>
+            <div class="form-control">
+              <select class="form-input">
+                <option class="placeholder-option" disabled selected>Выберите вид мероприятия</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label">ФИО<span class="form-required">*</span></label>
+            <div class="form-control">
+              <input type="text" class="form-input" placeholder="Введите ФИО" />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label">Имейл<span class="form-required">*</span></label>
+            <div class="form-control">
+              <input type="email" class="form-input" placeholder="Введите имейл" />
+            </div>
+          </div>
+          
+          <div class="form-field">
+            <label class="form-label">Номер телефона<span class="form-required">*</span></label>
+
+            <div class="form-control">
+              <input type="tel" class="form-input" placeholder="+7 777 77 77" />
+            </div>
+          </div>
+
+
+          <button type="button" class="add-friend">
+            <span class="icon-frame">
+              <img src="plus-icon.svg" alt="Плюс" class="icon" />
+            </span>
+            <span class="add-friend-text">Добавить друга</span>
+          </button>
+
+          <div class="form-field">
+            <label class="form-label">Предпочитаемый вид связи<span class="form-required">*</span></label>
+
+            <div class="form-control">
+              <select class="form-input">
+                <option class="placeholder-option" disabled selected>Выберите предпочитаемый вид связи</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <div class="footer-left-group">
+              <button class="footer-btn btn-back">
+                <span class="btn-text">Назад</span>
+              </button>
+
+              <button class="footer-btn btn-next" type="submit">
+                <span class="btn-text">Дальше</span>
+              </button>
+            </div>
+          </div>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
